@@ -7,12 +7,9 @@ const placesToTravel = [
   { id: 59, name: "Madagascar" },
 ];
 
-const newplaces = []
-for (const place of placesToTravel) {
-  if (!place.id.includes("11")) {
-    newToys.push(place);
-  }
-}
+const newPlaces = placesToTravel.filter(
+  (place) => place.id !== 11 && place.id !== 40
+);
 
-console.log(newplaces);
+console.log(newPlaces);
 
