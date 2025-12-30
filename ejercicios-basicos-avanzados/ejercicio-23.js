@@ -11,23 +11,20 @@ const movies = [
   { name: "Eternal Sunshine of the Spotless Mind", durationInMinutes: 108 },
 ];
 
-const pelipequeña = []
-const pelimediana = []
-const peligrande = []
+const pelipequeña = [];
+const pelimediana = [];
+const peligrande = [];
 
 for (let peli of movies) {
   if (peli.durationInMinutes < 100) {
-    pelipequeña.push(peli)
-  } else if (
-    peli.durationInMinutes > 100 &&
-    peli.durationInMinutes < 200
-  ) {
-    pelimediana.push(peli)
+    pelipequeña.push(peli);
+  } else if (peli.durationInMinutes > 100 && peli.durationInMinutes < 200) {
+    pelimediana.push(peli);
   } else if (peli.durationInMinutes > 200) {
-    peligrande.push(peli)
+    peligrande.push(peli);
   }
 }
 
-console.log("Peli pequeña: ", pelipequeña)
-console.log("Peli mediana: ", pelimediana)
-console.log("Peli grande: ", peligrande)
+console.log("Peli pequeña: ", pelipequeña);
+console.log("Peli mediana: ", pelimediana);
+console.log("Peli grande: ", peligrande);
